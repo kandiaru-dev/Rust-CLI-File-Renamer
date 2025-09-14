@@ -2,7 +2,7 @@ use std::fs;
 
 fn main() {
 
-    let paths = fs::read_dir("./public").unwrap();
+    let paths = fs::read_dir("./public").unwrap(); //only files in public folder can be renamed.
 
     for path in paths {
         let path = path.unwrap().path();
